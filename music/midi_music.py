@@ -2,14 +2,12 @@
 import mido
 
 class MidiData:
-    def __init__(self, filename, title):
+    def __init__(self, filename, title='Unnamed'):
         self.midi = mido.MidiFile(filename)
-        pass
+        self.title = title
 
-    def parse_file(self, filename):
-        self.file_data
-        pass
+        self.port = mido.open_output()
 
     def play_music(self):
         for msg in self.midi.play():
-            port.send(msg)
+            self.port.send(msg)
