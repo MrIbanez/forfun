@@ -7,7 +7,7 @@ class FrameExample(tk.Frame):
         self.build_frames(list_of_frames)
 
     def build_frames(list_of_frames):
-
+        pass
 
 
 class SubFrame1(tk.Frame):
